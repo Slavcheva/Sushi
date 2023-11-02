@@ -1,10 +1,10 @@
 @import "typography.css";
 @import "buttons.css";
 @import "forms.css";
+@import "elements.css";
 
 body{
-    /*background: #21233D;*/
-    background: grey;
+    background: #21233D;
     color: #FFFFFF;
 }
 
