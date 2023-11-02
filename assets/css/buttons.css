@@ -7,8 +7,10 @@
     font-weight: 700;
     font-size: 0.8em;
     text-transform: uppercase;
+    outline: none;
 }
 
+.button:focus,
 .button:hover{
     background: transparent;
     color: #21233D;
