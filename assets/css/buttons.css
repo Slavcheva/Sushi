@@ -1,0 +1,19 @@
+.button {
+    background: #21233D;
+    color: #FFFFFF;
+    padding: 0.5em 3em;
+    border: 2px solid #21233D;
+    border-radius: 3em;
+    font-weight: 700;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    background: transparent;
+    color: #21233D;
+}
+
+.subscribe-btn{
+    padding: 0.5em 1em;
+}
