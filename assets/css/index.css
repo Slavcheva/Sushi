@@ -2,9 +2,37 @@
 @import "buttons.css";
 @import "forms.css";
 @import "elements.css";
+@import "sections.css";
+
 
 body{
     background: #21233D;
     color: #FFFFFF;
+}
+
+.wrapper{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 3em 1em;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0;
+}
+
+.wrapper > p{
+    width: 60%;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 600px){
+    .wrapper{
+        padding: 6em 1em;
+    }
 }
 
