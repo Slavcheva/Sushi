@@ -4,6 +4,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 100%;
+    margin: auto;
 }
 
 .img-wrapper:before{

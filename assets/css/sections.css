@@ -1,3 +1,4 @@
+/*Popular-menu Section*/
 .popular-section .wrapper {
     flex-direction: column;
 }
@@ -15,15 +16,23 @@
 }
 
 .popular-section ul li.sushi-box .img-wrapper {
-    max-width: 160px;
-    margin: auto;
+    max-width: 200px;
 }
-
-.popular-section ul li.sushi-box h5 {
-}
-
 .popular-section ul li.sushi-box p {
     font-size: 0.9em
+}
+
+
+/*Order sections*/
+.order-section{
+    background: #FFD17E;
+    color: #21233D;
+}
+
+
+.order-section .img-wrapper {
+    width: 400px;
+    max-width: 80%;
 }
 
 
@@ -33,6 +42,18 @@
     }
     .popular-section ul li.sushi-box p {
         font-size: 0.8em
+    }
+
+
+    .order-section .img-wrapper {
+        max-width: 48%;
+    }
+
+    .order-section .content{
+        text-align: left;
+    }
+    .order-section div.content{
+        flex: 0 0 48%;
     }
 }
 
