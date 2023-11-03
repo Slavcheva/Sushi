@@ -9,8 +9,13 @@
 <body>
 <header class="site-header">
     <div class="site-menu">
-        <div class="site-logo"><img src="assets/images/site-logo.svg" alt="sushi site logo"></div>
+        <div class="site-logo"><a href="#"><img src="assets/images/site-logo.svg" alt="sushi site logo"></a></div>
         <nav class="site-nav">
+            <input type="checkbox" id="menu" class="nav-toggle">
+            <label class="nav-toggle-btn" for="menu">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </label>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Product</a></li>
@@ -19,7 +24,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div class="search-btn"></div>
+        <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
     </div>
     <div class="site-banner">
         <h1>Title Here</h1>
