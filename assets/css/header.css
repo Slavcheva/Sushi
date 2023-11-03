@@ -1,0 +1,160 @@
+/*Navigation*/
+.site-header .site-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    position: relative;
+}
+
+.site-nav ul {
+    flex-direction: column;
+    gap: 1em;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 1.5em;
+    display: none;
+    background: #FFFFFF;
+}
+
+.site-nav ul li {
+    background: #ffff;
+    opacity: 0.9;
+    border: 2px solid #21233D;
+}
+
+.site-nav ul li a {
+    color: #21233D;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+.search-btn {
+    display: none;
+}
+
+.nav-toggle {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+}
+
+.fa-xmark {
+    display: none;
+}
+
+.nav-toggle:checked + label > .fa-xmark {
+    display: block;
+}
+
+.nav-toggle:checked + label > .fa-bars {
+    display: none;
+}
+
+.nav-toggle:checked + label + ul {
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+}
+
+label.nav-toggle-btn {
+    margin-left: auto;
+    font-size: 2em;
+}
+
+.site-logo img{
+    max-width: 70%;
+}
+
+@media (min-width: 600px) {
+
+    .nav-toggle-btn {
+        display: none;
+    }
+
+    .site-nav ul {
+        display: flex;
+        right: unset;
+        top: unset;
+        width: unset;
+        position: initial;
+        flex-direction: row;
+        background: transparent;
+        margin-top: 0;
+    }
+
+    .search-btn {
+        cursor: pointer;
+        display: inline;
+    }
+
+    .site-nav ul li a:hover {
+        color: #FFD17E;
+    }
+
+    .site-nav ul li {
+        background: transparent;
+        opacity: 1;
+        border: none;
+    }
+
+    .site-nav ul li a {
+        color: #FFFFFF;
+        padding: 0;
+        border-radius: 0;
+        font-weight: 500;
+        display: block;
+    }
+
+    .site-nav ul li.search-item {
+        display: none;
+    }
+    .site-logo img{
+        max-width: unset;
+    }
+}
+
+@media (min-width: 992px) {
+    .site-nav ul {
+        gap: 4em;
+    }
+}
+
+/*Banner*/
+.site-banner{
+    position: relative;
+    background: center/cover no-repeat url("../images/banner-background.png");
+    padding: 5em 2em;
+}
+
+.site-banner:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: #250c00;
+    opacity: 0.3;
+}
+
+.site-banner h1,
+.site-banner p,
+.site-banner button{
+    z-index: 10;
+    position: relative;
+}
+
+@media (min-width: 600px) {
+    .site-banner{
+        padding: 8em 2em;
+    }
+    .site-banner p{
+        width: 50%;
+    }
+}
