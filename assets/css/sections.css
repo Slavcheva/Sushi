@@ -39,7 +39,6 @@
 }
 
 
-
 /*Statistic Section*/
 .statistics-section .wrapper{
     flex-direction: column;
@@ -91,7 +90,38 @@
 }
 
 
+/*Testimonial Section*/
+.testimonial-section {
+    background: center/cover no-repeat url("../images/testimonials-background.png");
+    position: relative;
+}
 
+.testimonial-section:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background:  rgba(17, 18, 38, 0.9);
+}
+
+
+.testimonial-section .wrapper{
+    flex-direction: column;
+}
+
+.testimonial-section .img-wrapper {
+    width: 15em;
+    max-width: 200px;
+    z-index: 10;
+}
+
+.testimonial-section p{
+    font-size: 1.2em;
+    z-index: 10;
+}
+.testimonial-section h4{
+    z-index: 10;
+}
 
 @media screen and (min-width: 600px) {
 
